@@ -31,19 +31,19 @@ public class Ex12 {
         //15
 
 
-        ListFilter<?> listFilter =  (ls, predicate) ->{
-            List<Object> firstlist = new ArrayList<>();
-            for(Object number:ls)
-            {
-                if(predicate.test(number))
-                    firstlist.add(number);
-            }
-            return  (List)firstlist;
-        };
-
-        List<Integer> nums = new ArrayList<>(List.of(23,2312,1,2,3,4,5,2452,23452));
-        Predicate<Object> lessThan10 = n -> ((Integer)n)<10;
-        System.out.println(listFilter.filter(nums,lessThan10));
+//        ListFilter<?> listFilter =  (ls, predicate) ->{
+//            List<Object> firstlist = new ArrayList<>();
+//            for(Object number:ls)
+//            {
+//                if(predicate.test(number))
+//                    firstlist.add(number);
+//            }
+//            return  (List)firstlist;
+//        };
+//
+//        List<Integer> nums = new ArrayList<>(List.of(23,2312,1,2,3,4,5,2452,23452));
+//        Predicate<Object> lessThan10 = n -> ((Integer)n)<10;
+//        System.out.println(listFilter.filter(nums,lessThan10));
         
 
 
