@@ -1,11 +1,10 @@
 package streams;
 
 import java.util.*;
-import java.util.function.IntPredicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Ex1 {
+public class ExercisesWithStreams {
     public static void main(String[] args) {
 
 //        Given a list of integers, create a new list that contains only the even numbers. Use streams to achieve this.
@@ -106,21 +105,22 @@ public class Ex1 {
 
         System.out.println("Totoal number of characters in list: "+totalNmbrChar);
 
-
-
-
-
-
-
-
-
-
-
-
     }
     @FunctionalInterface
     interface ssss{
         boolean isPrime(int n);
     }
+
+
+    /*Create a stream from a text file and use stream operations to find and print the longest word in the file.
+    Given a list of employee objects with attributes: name, department, and salary; find the department with the highest total salary.
+    Using a stream of strings representing numbers (e.g., "1", "2", "3"), convert them to integers and find the product of all numbers using reduce. (Input: List<String> numbers = Arrays.asList("1", "2", "3", "4", "5");)
+    Given a list of products with attributes: name, category, and price; find the category with the highest average price.
+    Given a list of books with attributes: title, author, and year of publication; use streams to find all the books published before the year 2000 and group them by author in a map where the key is the author and the value is a list of titles of their books.
+
+    !!!TO BE CONTINUED!!!
+
+     */
+
 
 }
