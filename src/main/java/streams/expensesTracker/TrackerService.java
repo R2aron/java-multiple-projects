@@ -19,6 +19,15 @@ public class TrackerService {
         expensesMap.forEach((k, v) -> System.out.println(v.toString()));
     }
 
+    protected void welcome()
+    {
+        System.out.println("!!!Welcome to your expense Tracker!!!");
+        System.out.println("Press m for MENU\n");
+
+        Character c = input.nextLine();
+        (c.equals('m') ? menu() : welcome());//de modificat
+    }
+
     protected void edit(Expense expense) {
         Scanner input = new Scanner(System.in);
 
@@ -45,15 +54,13 @@ public class TrackerService {
                 break;
                 case 2: {
                     System.out.println("Enter new name");
-                    Scanner inputName = new Scanner(System.in);
-                    String str = inputName.nextLine();
+                    String str = input.nextLine();
                     expense.setName(str);
                     break;
                 }
                 case 3: {
                     System.out.println("Enter new price");
-                    Scanner inputPrice = new Scanner(System.in);
-                    Double newPrice = inputPrice.nextDouble();
+                    Double newPrice = input.nextDouble();
                     expense.setPrice(newPrice);
                     break;
                 }

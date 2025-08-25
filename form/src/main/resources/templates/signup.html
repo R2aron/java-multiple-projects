@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Volunteer Signup</title>
+</head>
+<body>
+<h2>Volunteer Signup</h2>
+<form action="/volunteers" method="post" th:object="${volunteer}">
+    <input type="text" th:field="*{name}" placeholder="Name"/><br/>
+    <input type="email" th:field="*{emailAddress}" placeholder="Email"/><br/>
+    <input type="text" th:field="*{phoneNumber}" placeholder="Phone"/><br/>
+    <input type="text" th:field="*{event}" placeholder="Event"/><br/>
+    <button type="submit">Sign Up</button>
+</form>
+</body>
+</html>

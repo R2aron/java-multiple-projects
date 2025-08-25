@@ -1,0 +1,4 @@
+Volunteer(name=Andrei, emailAddress=raceaaandrei@gmalil.com, phoneNumber=0754537169, event=Diner)
+Volunteer(name=MArius, emailAddress=marius@gmail.com, phoneNumber=0758697512, event=kaiac)
+Volunteer(name=null, emailAddress=null, phoneNumber=null, event=null)
+Volunteer(name=aaaa, emailAddress=a@a, phoneNumber=1555, event=sss)
